@@ -7,7 +7,7 @@
     <title>Unit Converter | Raunak Mishra</title>
     <link rel="icon" type="image/png" href="./assets/images/signature.png" />
     <!-- Importing Custom CSS -->
-    <link rel="stylesheet" href="./assets/css/custom.css">
+    <link rel="stylesheet" href="./assets/css/unit_converter.css">
     <!-- Importing Bootstrap -->
     <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -39,8 +39,8 @@
         </div>
     </header>
     <nav class="mobileNav">
-        <button id="currency_converter_link" href="https://converter.mraunak.com.np">Currency Converter</button>
-        <button id="temp_converter_link" href="">Temperature Converter</button>
+        <button id="currency_converter_link_mb" href="https://converter.mraunak.com.np">Currency Converter</button>
+        <button id="temp_converter_link_mb" href="">Temperature Converter</button>
         <button style="display: none;" href="">File Converter</button>
     </nav>
 
@@ -504,7 +504,15 @@
                 $('#temp_converter_section').show();
                 $('#unit_converter_section').hide();
             });
+            $('#temp_converter_link_mb').click(function () {
+                $('#temp_converter_section').show();
+                $('#unit_converter_section').hide();
+            });
             $('#currency_converter_link').click(function(){
+                $('#temp_converter_section').hide();
+                $('#unit_converter_section').show();
+            });
+            $('#currency_converter_link_mb').click(function () {
                 $('#temp_converter_section').hide();
                 $('#unit_converter_section').show();
             });
