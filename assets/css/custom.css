@@ -293,6 +293,10 @@ header.is-scrolling .navbar-container {
     margin-bottom: 10px;
 }
 
+input::placeholder{
+    color: #fff;
+}
+
 .results-section, .temp-results-section{
     display: flex;
     justify-content: center;
